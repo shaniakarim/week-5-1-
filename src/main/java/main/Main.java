@@ -2,18 +2,17 @@ package main;
 
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Student("Alice Johnson", "12345");
-        Student student2 = new Student("Bob Smith", "67890");
+        Course course = new Course("Programming 101", 30);
 
-        Course course1 = new Course("Object-Oriented Programming", 30);
-        Course course2 = new Course("Data Structures", 25);
+        Student student1 = new Student("John Smith", "S001");
+        Student student2 = new Student("Alice Johnson", "S002");
 
-        System.out.println("Students:");
-        System.out.println(student1.getName() + " (" + student1.getStudentId() + ")");
-        System.out.println(student2.getName() + " (" + student2.getStudentId() + ")");
-
-        System.out.println("\nCourses:");
-        System.out.println(course1.getCourseName() + " - Max Students: " + course1.getMaxStudents());
-        System.out.println(course2.getCourseName() + " - Max Students: " + course2.getMaxStudents());
+        System.out.println("Course Information:");
+        System.out.println("Name: " + course.getCourseName());
+        System.out.println("Maximum students: " + course.getMaxStudents());
+        System.out.println();
+        System.out.println("Student Information:");
+        System.out.println("Student 1 - Name: " + student1.getName() + ", ID: " + student1.getStudentId());
+        System.out.println("Student 2 - Name: " + student2.getName() + ", ID: " + student2.getStudentId());
     }
 }
